@@ -1,0 +1,198 @@
+/* src/css/fonts.css */
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local(".SFNS-Light"),
+    local(".SFNSText-Light"),
+    local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Light"),
+    local("Ubuntu Light"),
+    local("Roboto-Light"),
+    local("DroidSans"),
+    local("Tahoma");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 300;
+  src:
+    local(".SFNS-LightItalic"),
+    local(".SFNSText-LightItalic"),
+    local(".HelveticaNeueDeskInterface-Italic"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Light Italic"),
+    local("Ubuntu Light Italic"),
+    local("Roboto-LightItalic"),
+    local("DroidSans"),
+    local("Tahoma");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(".SFNS-Regular"),
+    local(".SFNSText-Regular"),
+    local(".HelveticaNeueDeskInterface-Regular"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI"),
+    local("Ubuntu"),
+    local("Roboto-Regular"),
+    local("DroidSans"),
+    local("Tahoma");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local(".SFNS-Italic"),
+    local(".SFNSText-Italic"),
+    local(".HelveticaNeueDeskInterface-Italic"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Italic"),
+    local("Ubuntu Italic"),
+    local("Roboto-Italic"),
+    local("DroidSans"),
+    local("Tahoma");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local(".SFNS-Medium"),
+    local(".SFNSText-Medium"),
+    local(".HelveticaNeueDeskInterface-MediumP4"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Semibold"),
+    local("Ubuntu Medium"),
+    local("Roboto-Medium"),
+    local("DroidSans-Bold"),
+    local("Tahoma Bold");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 500;
+  src:
+    local(".SFNS-MediumItalic"),
+    local(".SFNSText-MediumItalic"),
+    local(".HelveticaNeueDeskInterface-MediumItalicP4"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Semibold Italic"),
+    local("Ubuntu Medium Italic"),
+    local("Roboto-MediumItalic"),
+    local("DroidSans-Bold"),
+    local("Tahoma Bold");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(".SFNS-Bold"),
+    local(".SFNSText-Bold"),
+    local(".HelveticaNeueDeskInterface-Bold"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Bold"),
+    local("Ubuntu Bold"),
+    local("Roboto-Bold"),
+    local("DroidSans-Bold"),
+    local("Tahoma Bold");
+}
+@font-face {
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local(".SFNS-BoldItalic"),
+    local(".SFNSText-BoldItalic"),
+    local(".HelveticaNeueDeskInterface-BoldItalic"),
+    local(".LucidaGrandeUI"),
+    local("Segoe UI Bold Italic"),
+    local("Ubuntu Bold Italic"),
+    local("Roboto-BoldItalic"),
+    local("DroidSans-Bold"),
+    local("Tahoma Bold");
+}
+
+/* src/css/styles.scss */
+body {
+  display: flex;
+  font-family: system-ui;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding-bottom: 4rem;
+  color: #333;
+}
+a,
+a:visited {
+  color: #005785;
+  text-decoration: none;
+}
+h1 {
+  font-weight: 200;
+  font-size: clamp(2rem, 5vw, 6rem);
+  margin: clamp(0.5rem, 2vw, 2rem) 0;
+}
+h2 {
+  font-weight: 200;
+  font-size: clamp(1.1rem, 2vw, 2rem);
+  margin: clamp(0.5rem, 2vw, 2rem) 0;
+}
+img {
+  width: clamp(100px, 35vw, 350px);
+  border-radius: clamp(8px, 3vw, 32px);
+  box-shadow:
+    0 8px 16px rgba(0, 120, 184, 0.3),
+    0 -2px 6px rgba(0, 120, 184, 0.07),
+    0 0 0 clamp(2px, 2vw, 16px) rgba(0, 120, 184, 0.2);
+}
+.menu {
+  background-color: #0078b8;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.menu nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+  align-items: center;
+}
+.menu nav ul li {
+  margin: 0 0.2rem;
+}
+.menu nav ul li a {
+  padding: 0.4rem 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: clamp(2px, 3vw, 6px);
+}
+.menu nav ul li:hover a {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.menu nav ul li.active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 1.5rem;
+  border-radius: clamp(2px, 3vw, 6px);
+  cursor: default;
+}
+.menu a,
+.menu a:visited {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+/*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
