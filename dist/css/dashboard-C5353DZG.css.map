@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/css/dashboard.css"],
+  "sourcesContent": ["body {\n    background-color: #e1f4fa;\n}\n\n.content {\n    margin: 1rem 0;\n    width: clamp(100px, 80vw, 960px);\n\n    p {\n        line-height: 1.4;\n        font-size: clamp(14px, 1.5vw, 1rem);\n    }\n\n    p.info {\n        font-size: clamp(12px, 1.5vw, 0.8rem);\n        text-align: center;\n        margin: 2em 0;\n        opacity: .7;\n    }\n\n    p.lipsum::first-letter {\n        vertical-align: middle;\n        padding: .5em;\n        margin: 0 .4em 0 0;\n        line-height: 1em;\n        font-size: 2em;\n        font-weight: 100;\n        color: #ffffff;\n        background-color: #0065b8;\n        border-radius: .2em;\n        float: left;\n    }\n\n    hr {\n        background: #0065b8;\n        height: 1px;\n        border: none;\n        width: 100%;\n        margin: 2em 0;\n    }\n}"],
+  "mappings": "AAAA,KACI,iBAAkB,OACtB,CAEA,CAAC,QAJD,OAKY,KAAK,EACb,MAAO,MAAM,KAAK,CAAE,IAAI,CAAE,OAE1B,EACI,YAAa,IACb,UAAW,MAAM,IAAI,CAAE,KAAK,CAAE,KAClC,CAEA,CAAC,CAAC,KACE,UAAW,MAAM,IAAI,CAAE,KAAK,CAAE,OAC9B,WAAY,OAfpB,OAgBgB,IAAI,EACZ,QAAS,EACb,CAEA,CAAC,CAAC,MAAM,cACJ,eAAgB,OArBxB,QAsBiB,KAtBjB,OAuBgB,EAAE,KAAK,EAAE,EACjB,YAAa,IACb,UAAW,IACX,YAAa,IACb,MAAO,KACP,iBAAkB,QA5B1B,cA6BuB,KACf,MAAO,IACX,CAEA,GACI,WAAY,QACZ,OAAQ,IACR,OAAQ,KACR,MAAO,KArCf,OAsCgB,IAAI,CAChB,CACJ",
+  "names": []
+}

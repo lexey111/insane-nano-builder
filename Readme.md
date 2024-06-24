@@ -1,6 +1,7 @@
-# Insane:nanoCoreBuilder, an old-fashioned modern app builder
+# Insane:nanoBuilder, an old-fashioned modern app builder
 
-Todo: add Medium link
+To understand what is it:
+[Medium Article](https://lexeykoshkin.medium.com/building-a-builder-go-deeper-ce9805b18de5)
 
 [Live Demo](https://lexey111.github.io/insane-nano-builder/)
 
@@ -25,3 +26,6 @@ Also includes BrowserSync and custom build watcher.
 
 1. `bun start`
 2. open 'http://localhost:3000/'
+
+### Usage
+Clone the repository and write your framework-less frontend using `src` folder.
