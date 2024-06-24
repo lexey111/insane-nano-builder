@@ -1,0 +1,36 @@
+/* src/css/dashboard.css */
+body {
+  background-color: #e1f4fa;
+}
+.content {
+  margin: 1rem 0;
+  width: clamp(100px, 80vw, 960px);
+  p {
+    line-height: 1.4;
+    font-size: clamp(14px, 1.5vw, 1rem);
+  }
+  p.info {
+    text-align: center;
+    margin: 2em 0;
+    opacity: .5;
+  }
+  p.lipsum::first-letter {
+    vertical-align: middle;
+    padding: .5em;
+    margin: 0 .4em 0 0;
+    line-height: 1em;
+    font-size: 2em;
+    font-weight: 100;
+    color: #ffffff;
+    background-color: #0065b8;
+    border-radius: .2em;
+    float: left;
+  }
+  hr {
+    background: #0065b8;
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin: 2em 0;
+  }
+}

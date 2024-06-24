@@ -1,0 +1,43 @@
+{
+  "name": "insane-nano-core",
+  "version": "1.0.0",
+  "description": "more advanced semi-static builder",
+  "main": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "cleanup": "bun rimraf ./dist",
+    "build": "bun rimraf dist & bun build/esbuild.js",
+    "start": "bun build/esbuild-serve.js",
+    "deploy": "bun run build && git subtree push --prefix dist origin gh-pages",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix"
+  },
+  "keywords": [
+    "insane",
+    "frontend",
+    "builder",
+    "advanced"
+  ],
+  "author": "lexey111",
+  "license": "ISC",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-html": "^0.18.2",
+    "@stylistic/eslint-plugin-js": "^2.2.2",
+    "@stylistic/eslint-plugin-ts": "^2.2.2",
+    "@types/bun": "latest",
+    "@typescript-eslint/parser": "^7.13.1",
+    "browser-sync": "^3.0.2",
+    "chokidar": "^3.6.0",
+    "esbuild": "^0.21.5",
+    "esbuild-sass-plugin": "^3.3.1",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "htmlnano": "^2.1.1",
+    "rimraf": "^5.0.7",
+    "sass": "^1.77.6",
+    "svgo": "^3.3.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {}
+}
